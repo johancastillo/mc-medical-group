@@ -1,0 +1,240 @@
+
+/* General */
+*{
+    font-family: "Roboto";
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23e4e4e4'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23e4e4e4'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.banner{
+    margin-top: 77px;
+}
+
+/**/
+p{
+    margin: 0 !important;
+}
+
+.brand-item{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.card-brands{
+    max-width: 1000px !important;
+    margin: auto;
+}
+
+.card-brands .row{
+    flex-wrap: nowrap !important;
+    overflow: hidden !important;
+}
+
+
+.brand-img-one{
+    background: aliceblue;
+    transition: transform .80s;
+}
+
+.brand-img-one.activate{
+    transform: translateX(-668px);
+    background: aliceblue;
+    opacity: 1;
+}
+
+.brand-img-one.deactivate{
+    transform: translateX(0px) !important;
+    opacity: 1;
+}
+
+
+/**/
+.brand-img-three{
+    background: aliceblue;
+    transition: transform 1s;
+    transform: translateX(-2668px);
+    opacity: 0;
+}
+
+.brand-img-three.activate{
+    transform: translateX(-1635px);
+    background: aliceblue;
+    opacity: 1;
+}
+
+.brand-img-three.deactivate{
+    opacity: 1;
+    transform: translateX(-2668px);
+}
+
+/**/
+.brand-img-two1{
+    background: aliceblue;
+    transition: transform .90s;
+    opacity: 0;
+    transform: translateX(-3329px); 
+}
+
+.brand-img-two1.activate{
+    transform: translateX(-2329px);
+    background: aliceblue;
+    opacity: 1;
+}
+
+.brand-img-two1.deactivate{
+    transform: translateX(-3329px) !important;
+    opacity: 1;
+}
+
+.brand-img-two2{
+    background: aliceblue;
+    transition: transform .80s;
+}
+
+.brand-img-two2.activate{
+    transform: translateX(-1999px);
+    background: aliceblue;
+    opacity: 1;
+}
+
+.brand-img-two2.deactivate{
+    transform: translateX(0px) !important;
+    opacity: 1;
+}
+
+/**/
+.text-contain{
+    transition: all 1s;
+    opacity: 0;
+    height: 0;
+    
+}
+
+#brand-one:hover .text-contain{
+    opacity: 1;
+    height: 310px;
+}
+
+#brand-two:hover .text-contain{
+    opacity: 1;
+    height: 310px;
+}
+
+#brand-three:hover .text-contain{
+    opacity: 1;
+    height: 310px;
+}
+
+.brands-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 116.69%;
+    letter-spacing: -0.01em;
+    text-transform: capitalize;
+    color: #858083;
+    margin-top: 168px !important;
+}
+
+
+/*
+####################
+# Products Section #
+####################
+*/
+.products-section{
+    background-image: url(../images/backgrounds/bg-1.png);
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*
+####################
+# Products Section #
+####################
+*/
+.title-products{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 116.69%;
+    letter-spacing: 4px;
+    text-transform: capitalize;
+    color: #009FDA;
+    padding-top: 130px !important;
+}
+
+.linea{
+    border-top: 3px solid #808285;
+    width: 48%;
+    margin-top: 10px;
+}
+
+
+/*
+# Contact Section #
+*/
+.contact-section .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-section .content h4{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 116.69%;
+    /* or 98px */
+
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #009FDA;
+
+}
+
+.contact-section .content p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 116.69%;
+    /* or 50px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.01em;
+    text-transform: capitalize;
+
+    color: #858083;
+}
